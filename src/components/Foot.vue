@@ -9,35 +9,33 @@
           </a>
           <transition duration="300" appear appear-active-class="animated fadeIn" enter-active-class="animated fadeIn" leave-active-class="animated slideOut">
           <ul class="footer-item-content" v-show="seenItem">
-            <li class=""><a class="footer-item-link" href="">公司信息</a></li>
-            <li class=""><a class="footer-item-link" href="">企业文化</a></li>
-            <li class=""><a class="footer-item-link" href="">联系我们</a></li>
-            <li class=""><a class="footer-item-link" href="">加入我们</a></li>
+            <li>
+              <router-link class="footer-item-link" to="/company">公司信息</router-link>
+            </li>
+            <li>
+              <router-link class="footer-item-link" to="/culture">企业文化</router-link>
+            </li>
+            <li>
+              <router-link class="footer-item-link" to="/contact">联系我们</router-link>
+            </li>
+            <li class=""><a class="footer-item-link" href="https://www.infidea.cn/jobs/index.jhtml" target="_blank">招聘精英</a></li>
           </ul>
           </transition>
         </li>
         <li class="footer-item">
-          <a href="javascript:;" class="footer-item-title" @click="handleShowContent2">
+          <router-link to="/solution" class="footer-item-title">
             <span>解决方案</span>
             <span class="footer-category-cross"></span>
-          </a>
-          <transition duration="300" appear appear-active-class="animated fadeIn" enter-active-class="animated fadeIn" leave-active-class="animated slideOut">
-            <ul class="footer-item-content" v-show="seenItem2">
-              <li class=""><a class="footer-item-link" href="">公司信息</a></li>
-              <li class=""><a class="footer-item-link" href="">企业文化</a></li>
-              <li class=""><a class="footer-item-link" href="">联系我们</a></li>
-              <li class=""><a class="footer-item-link" href="">加入我们</a></li>
-            </ul>
-          </transition>
+          </router-link>
         </li>
         <li class="footer-item">
-          <router-link to="/about" class="footer-item-title">
+          <router-link to="/culture" class="footer-item-title">
             <span>社会责任</span>
             <span class="footer-category-cross"></span>
           </router-link>
         </li>
         <li class="footer-item">
-          <router-link to="/about" class="footer-item-title">
+          <router-link to="/contact" class="footer-item-title">
             <span>服务与支持</span>
             <span class="footer-category-cross"></span>
           </router-link>

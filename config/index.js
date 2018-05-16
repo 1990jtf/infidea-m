@@ -50,7 +50,8 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    // 因为部署到m文件下，如果部署到根目录为/
+    assetsPublicPath: '/m/',
 
     /**
      * Source Maps

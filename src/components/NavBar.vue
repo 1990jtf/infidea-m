@@ -10,15 +10,14 @@
         <router-link to="/" class="navbar-logo-icon"></router-link>
       </div>
     </div>
-    <transition enter-active-class="anmiated slideInLeft" leave-active-class="animated slideOutLeft">
+    <transition appear appear-active-class="anmiated slideInLeft" enter-active-class="anmiated slideInLeft" leave-active-class="animated slideOutLeft">
       <div class="navbar-content" v-show="seen">
           <ul class="navbar-content-items">
-            <li class="navbar-content-item"><router-link to='/about'>关于我们</router-link></li>
-            <li class="navbar-content-item"><router-link to='/about'>解决方案</router-link></li>
-            <li class="navbar-content-item"><router-link to='/about'>软件开发</router-link></li>
-            <li class="navbar-content-item"><router-link to='/about'>飞飞到家</router-link></li>
-            <li class="navbar-content-item"><router-link to='/about'>社会责任</router-link></li>
-            <li class="navbar-content-item"><router-link to='/about'>服务与支持</router-link></li>
+            <li class="navbar-content-item"><router-link to='/company'>关于我们</router-link></li>
+            <li class="navbar-content-item"><router-link to='/solution'>解决方案</router-link></li>
+            <li class="navbar-content-item"><a href="http://feifei.infidea.cc" target="_blank">飞飞到家</a></li>
+            <li class="navbar-content-item"><router-link to='/company'>社会责任</router-link></li>
+            <li class="navbar-content-item"><router-link to='/company'>服务与支持</router-link></li>
           </ul>
       </div>
     </transition>
@@ -46,12 +45,14 @@ export default {
   background rgba(0,0,0,0.8)
   transition: all 1s ease;
   .navbar-container
+    position relative
     height 100px
-    text-align: center;
+    text-align center
     .navbar-control
+      position absolute
       display inline-block
       margin-top 26px
-      float left
+      left 34px
       vertical-align middle
       .control-icon
         display block
