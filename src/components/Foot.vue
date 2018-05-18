@@ -44,12 +44,12 @@
       <div class="footer-bottom m-wrapper">
         <ul class="footer-social-list">
           <li><a href="https://weibo.com/infidea">
-             <img src="https://www.infidea.cn/r/cms/www/default/images/icon/weibo.png"></a>
+             <img src="@/assets/weibo.png"></a>
           </li>
           <li><span @click="handleShowCode" class="footer-social-weixin">
-             <img src="https://www.infidea.cn/r/cms/www/default/images/icon/weixin.png"></span>
+             <img src="@/assets/weixin.png"></span>
              <div class="footer-social-qrcode" v-show="seen">
-               <img src="https://www.infidea.cn/r/cms/www/default/images/weixin-code.jpg" />
+               <img src="@/assets/weixin-code.jpg" />
              </div>
           </li>
         </ul>
