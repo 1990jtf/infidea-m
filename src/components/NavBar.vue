@@ -14,10 +14,11 @@
       <div class="navbar-content" v-show="seen">
           <ul class="navbar-content-items">
             <li class="navbar-content-item"><router-link to='/company'>关于我们</router-link></li>
+            <li class="navbar-content-item"><router-link to='/solution'>产品</router-link></li>
             <li class="navbar-content-item"><router-link to='/solution'>解决方案</router-link></li>
             <li class="navbar-content-item"><a href="http://feifei.infidea.cc" target="_blank">飞飞到家</a></li>
-            <li class="navbar-content-item"><router-link to='/company'>社会责任</router-link></li>
             <li class="navbar-content-item"><router-link to='/company'>服务与支持</router-link></li>
+            <li class="navbar-content-item"><router-link to='/company'>社会责任</router-link></li>
           </ul>
       </div>
     </transition>
