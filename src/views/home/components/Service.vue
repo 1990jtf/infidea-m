@@ -1,27 +1,9 @@
 <template>
   <div id="service">
-    <div class="service-list">
+    <div class="service-list" v-for="service of serviceList" :key="service.id">
       <div class="service-content">
-        <h3 class="service-title">公司产品</h3>
-        <div class="service-desc">成熟产品解决方案</div>
-        <div class="service-img">
-          <img src="@/assets/more_circle.png" />
-        </div>
-      </div>
-    </div>
-    <div class="service-list">
-      <div class="service-content">
-        <h3 class="service-title">解决方案</h3>
-        <div class="service-desc">细分行业解决方案</div>
-        <div class="service-img">
-          <img src="@/assets/more_circle.png" />
-        </div>
-      </div>
-    </div>
-    <div class="service-list">
-      <div class="service-content">
-        <h3 class="service-title">英飞公益</h3>
-        <div class="service-desc">让世界变得更美好</div>
+        <h3 class="service-title">{{service.title}}</h3>
+        <div class="service-desc">{{service.desc}}</div>
         <div class="service-img">
           <img src="@/assets/more_circle.png" />
         </div>
@@ -31,7 +13,10 @@
 </template>
 <script>
 export default {
-  name: 'Service'
+  name: 'Service',
+  props: {
+    serviceList: Array
+  }
 }
 </script>
 

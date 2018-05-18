@@ -1,0 +1,54 @@
+{
+  "code": "200",
+  "data": {
+    "navBarList":[
+      {
+        "id":"0001",
+        "name":"关于我们",
+        "url":"/company"
+      },
+      {
+        "id":"0002",
+        "name":"产品",
+        "url":"/solution"
+      },
+      {
+        "id":"0003",
+        "name":"解决方案",
+        "url":"/solution"
+      },
+      {
+        "id":"0004",
+        "name":"飞飞到家",
+        "url":"http://feifei.infidea.cc"
+      },
+      {
+        "id":"0005",
+        "name":"服务与支持",
+        "url":"/support"
+      },
+      {
+        "id":"0006",
+        "name":"社会责任",
+        "url":"/company"
+      }
+    ],
+    "serviceList":[
+      {
+        "id":"0001",
+        "title":"公司产品",
+        "desc":"成熟产品解决方案"
+      },
+      {
+        "id":"0002",
+        "title":"解决方案",
+        "desc":"细分行业解决方案"
+      },
+      {
+        "id":"0003",
+        "title":"英飞公益",
+        "desc":"让世界变得更美好"
+      }
+    ]
+  }
+}

@@ -13,6 +13,9 @@
     <transition appear appear-active-class="anmiated slideInLeft" enter-active-class="anmiated slideInLeft" leave-active-class="animated slideOutLeft">
       <div class="navbar-content" v-show="seen">
           <ul class="navbar-content-items">
+            <!-- <li class="navbar-content-item" v-for="item of navBarList" :key="item.id">
+              <router-link :to='item.url'>{{item.name}}</router-link>
+            </li> -->
             <li class="navbar-content-item"><router-link to='/company'>关于我们</router-link></li>
             <li class="navbar-content-item"><router-link to='/solution'>产品</router-link></li>
             <li class="navbar-content-item"><router-link to='/solution'>解决方案</router-link></li>
@@ -27,6 +30,9 @@
 <script>
 export default {
   name: 'NavBar',
+  // props: {
+  //   navBarList: Array
+  // },
   data () {
     return {
       seen: false
