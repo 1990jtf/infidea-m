@@ -1,13 +1,13 @@
 <template>
   <div id="service">
     <div class="service-list" v-for="service of serviceList" :key="service.id">
-      <div class="service-content">
+      <router-link tag="div" :to="service.link" class="service-content">
         <h3 class="service-title">{{service.title}}</h3>
         <div class="service-desc">{{service.desc}}</div>
         <div class="service-img">
           <img src="@/assets/more_circle.png" />
         </div>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>

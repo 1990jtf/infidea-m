@@ -4,6 +4,7 @@ import Home from '@/views/home/Home'
 import Company from '@/views/about/Company'
 import Contact from '@/views/about/Contact'
 import Culture from '@/views/about/Culture'
+import Finance from '@/views/finance/Finance'
 import Solution from '@/views/solution/Solution'
 
 Vue.use(Router)
@@ -21,6 +22,12 @@ export default new Router({
       path: '/company',
       name: 'Company',
       component: Company
+    },
+    {
+      // 金融投资
+      path: '/investment',
+      name: 'Investment',
+      component: Finance
     },
     {
       // 联系方式

@@ -29,6 +29,12 @@
           </router-link>
         </li>
         <li class="footer-item">
+          <router-link to="/investment" class="footer-item-title">
+            <span>金融投资</span>
+            <span class="footer-category-cross"></span>
+          </router-link>
+        </li>
+        <li class="footer-item">
           <router-link to="/culture" class="footer-item-title">
             <span>社会责任</span>
             <span class="footer-category-cross"></span>

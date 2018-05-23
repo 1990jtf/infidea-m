@@ -8,9 +8,9 @@
                 </transition>
                 <img class="swiper-img" src="@/assets/banner/banner-m.jpg"/>
             </swiper-slide>
-            <swiper-slide>
+<!--            <swiper-slide>
                 <img class="swiper-img" src="@/assets/banner/banner-m.jpg"/>
-            </swiper-slide>
+            </swiper-slide>-->
             <!-- Optional controls -->
             <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>

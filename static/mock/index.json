@@ -36,18 +36,21 @@
     "serviceList":[
       {
         "id":"0001",
-        "title":"公司产品",
-        "desc":"成熟产品解决方案"
+        "title":"解决方案",
+        "desc":"细分行业解决方案",
+        "link":"/solution"
       },
       {
         "id":"0002",
-        "title":"解决方案",
-        "desc":"细分行业解决方案"
+        "title":"金融投资",
+        "desc":"投资世界上最优秀的公司",
+        "link":"/investment"
       },
       {
         "id":"0003",
         "title":"英飞公益",
-        "desc":"让世界变得更美好"
+        "desc":"让世界变得更美好",
+        "link":"/culture"
       }
     ]
   }
